@@ -2,7 +2,7 @@ const LINKS = [
   { label: "Email", href: "mailto:johnson.d.tyler@gmail.com", external: false },
   { label: "LinkedIn", href: "https://www.linkedin.com/in/johnsondtyler/", external: true },
   { label: "GitHub", href: "https://github.com/BurqueBone", external: true },
-  { label: "Download Resume", href: "/resume.pdf", external: true },
+  { label: "Download Resume", href: "/resume.pdf", external: false, download: "TylerJohnson-Resume.pdf" },
 ];
 
 export function Contact() {
@@ -23,6 +23,7 @@ export function Contact() {
             {...(link.external
               ? { target: "_blank", rel: "noopener noreferrer" }
               : {})}
+            {...(link.download ? { download: link.download } : {})}
             className="rounded-full border border-ink px-5 py-2.5 text-sm font-medium text-ink hover:border-accent hover:text-accent"
           >
             {link.label}

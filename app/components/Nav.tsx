@@ -11,21 +11,23 @@ export function Nav() {
         >
           Tyler Johnson
         </a>
-        <div className="flex items-center gap-6 text-sm">
-          <a href="#work" className="hover:text-accent">
+        <div className="flex items-center gap-4 text-sm sm:gap-6">
+          <a href="#work" className="hidden hover:text-accent sm:inline">
             Work
           </a>
-          <a href="#about" className="hover:text-accent">
+          <a href="#about" className="hidden hover:text-accent sm:inline">
             About
           </a>
-          <a href="#contact" className="hover:text-accent">
+          <a href="#contact" className="hidden hover:text-accent sm:inline">
             Contact
           </a>
           <a
             href="/resume.pdf"
+            download="TylerJohnson-Resume.pdf"
             className="rounded-full border border-ink px-4 py-1.5 text-sm hover:border-accent hover:text-accent"
           >
-            Download Resume
+            <span className="sm:hidden">Resume</span>
+            <span className="hidden sm:inline">Download Resume</span>
           </a>
         </div>
       </div>

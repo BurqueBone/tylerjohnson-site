@@ -22,6 +22,7 @@ export function Hero() {
       <div className="mt-10 flex flex-wrap gap-3">
         <a
           href="/resume.pdf"
+          download="TylerJohnson-Resume.pdf"
           className="rounded-full bg-ink px-6 py-3 text-sm font-medium text-shell hover:bg-accent"
         >
           Download Resume
