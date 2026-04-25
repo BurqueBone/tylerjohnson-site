@@ -1,4 +1,4 @@
-export type StackItem = { label: string; logo?: string };
+export type StackItem = { label: string; logo?: string; logoSrc?: string };
 export type StackRow = { label: string; groups: StackItem[][] };
 
 export const STACK: StackRow[] = [

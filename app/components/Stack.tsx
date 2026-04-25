@@ -31,6 +31,7 @@ export function Stack() {
                     >
                       <BrandIcon
                         slug={item.logo}
+                        logoSrc={item.logoSrc}
                         label={item.label}
                         className="h-3.5 w-3.5 text-ink-muted"
                       />
