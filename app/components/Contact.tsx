@@ -1,7 +1,7 @@
 const LINKS = [
   { label: "Email", href: "mailto:johnson.d.tyler@gmail.com" },
   { label: "LinkedIn", href: "https://www.linkedin.com/in/johnsondtyler/" },
-  { label: "GitHub", href: "https://github.com/johnsondtyler" },
+  { label: "GitHub", href: "https://github.com/BurqueBone" },
   { label: "Download Resume", href: "/resume.pdf" },
 ];
 
