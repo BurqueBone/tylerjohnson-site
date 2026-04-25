@@ -24,8 +24,8 @@ export const STACK: StackRow[] = [
     groups: [
       [
         { label: "Apollo" },
-        { label: "Outreach", logo: "outreach" },
-        { label: "Salesloft", logo: "salesloft" },
+        { label: "Outreach", logoSrc: "/logos/outreach.png" },
+        { label: "Salesloft", logoSrc: "/logos/salesloft.png" },
         { label: "Lemlist", logo: "lemlist" },
         { label: "Chili Piper", logo: "chilipiper" },
         { label: "ZoomInfo", logo: "zoominfo" },
