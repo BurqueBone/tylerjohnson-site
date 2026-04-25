@@ -1,4 +1,5 @@
 import { STACK } from "../content/stack";
+import { BrandIcon } from "./BrandIcon";
 
 export function Stack() {
   return (
@@ -15,26 +16,28 @@ export function Stack() {
             <dt className="text-sm font-medium uppercase tracking-wider text-ink-muted">
               {row.label}
             </dt>
-            <dd className="flex flex-wrap items-center gap-x-2 gap-y-3 text-ink">
+            <dd className="flex flex-wrap items-center gap-2 text-ink">
               {row.groups.map((group, gi) => (
-                <span key={gi} className="flex flex-wrap items-center gap-x-2 gap-y-3">
-                  {group.map((item, i) => (
-                    <span key={item} className="flex items-center gap-2">
-                      <span className="rounded-full bg-shell-alt px-3 py-1 text-sm">
-                        {item}
-                      </span>
-                      {i < group.length - 1 ? (
-                        <span aria-hidden className="text-ink-muted">
-                          ·
-                        </span>
+                <span
+                  key={gi}
+                  className={`flex flex-wrap items-center gap-2 ${
+                    gi > 0 ? "sm:ml-4" : ""
+                  }`}
+                >
+                  {group.map((item) => (
+                    <span
+                      key={item.label}
+                      className="inline-flex items-center gap-1.5 rounded-full bg-shell-alt px-3 py-1 text-sm"
+                    >
+                      {item.logo ? (
+                        <BrandIcon
+                          slug={item.logo}
+                          className="h-3.5 w-3.5 text-ink-muted"
+                        />
                       ) : null}
+                      <span>{item.label}</span>
                     </span>
                   ))}
-                  {gi < row.groups.length - 1 ? (
-                    <span aria-hidden className="mx-1 text-ink-muted">
-                      |
-                    </span>
-                  ) : null}
                 </span>
               ))}
             </dd>
