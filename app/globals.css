@@ -1,15 +1,23 @@
 @import "tailwindcss";
 
 @theme {
-  --color-shell: #FBF7F0;
-  --color-shell-alt: #F3EEE4;
-  --color-ink: #1F1B16;
-  --color-ink-muted: #6B6056;
-  --color-accent: #B5553C;
-  --color-hairline: #E7E0D3;
-  --color-blue: #3D5A6C;
-  --color-blue-soft: #E1E8ED;
-  --color-navy: #1E3A5F;
+  /* Cool palette: Tea Green / Celadon / Light Blue / Steel Blue / Rich Cerulean */
+  --color-shell: #FAFCF6;        /* page background — barely-tinted white */
+  --color-shell-alt: #EBF5DC;    /* section bands — Tea Green tint */
+  --color-ink: #1A2933;          /* primary text — cool dark */
+  --color-ink-muted: #5C7484;    /* muted text — cool gray (Steel-derived) */
+  --color-accent: #4D7298;       /* hover/CTAs — Rich Cerulean */
+  --color-hairline: #C8DCB6;     /* hairlines/borders — sage between Tea & Celadon */
+  --color-blue: #77A6B6;         /* secondary blue — Steel Blue */
+  --color-blue-soft: #D0EFB1;    /* letter-badge backgrounds — Tea Green */
+  --color-navy: #4D7298;         /* case study titles & eyebrow — Rich Cerulean */
+
+  /* Palette aliases (for any future direct use) */
+  --color-tea: #D0EFB1;
+  --color-celadon: #B3D89C;
+  --color-light-blue: #9DC3C2;
+  --color-steel-blue: #77A6B6;
+  --color-cerulean: #4D7298;
 
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
   --font-serif: var(--font-plex-serif), ui-serif, Georgia, serif;

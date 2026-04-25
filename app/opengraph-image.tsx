@@ -16,8 +16,8 @@ export default function OgImage() {
           flexDirection: "column",
           justifyContent: "center",
           padding: "80px",
-          background: "#FBF7F0",
-          color: "#1F1B16",
+          background: "#FAFCF6",
+          color: "#1A2933",
         }}
       >
         <div
@@ -33,7 +33,7 @@ export default function OgImage() {
           style={{
             marginTop: 16,
             fontSize: 42,
-            color: "#B5553C",
+            color: "#4D7298",
           }}
         >
           Go-to-Market Operations Leader
@@ -42,7 +42,7 @@ export default function OgImage() {
           style={{
             marginTop: 48,
             fontSize: 28,
-            color: "#6B6056",
+            color: "#5C7484",
             maxWidth: 900,
           }}
         >
