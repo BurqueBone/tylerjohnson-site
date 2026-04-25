@@ -5,6 +5,8 @@ export function Footer() {
         <span>Built with Next.js + Tailwind.</span>
         <a
           href="https://github.com/BurqueBone/tylerjohnson-site"
+          target="_blank"
+          rel="noopener noreferrer"
           className="hover:text-accent"
         >
           View source on GitHub
