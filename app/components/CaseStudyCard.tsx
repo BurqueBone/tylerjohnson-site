@@ -29,12 +29,12 @@ export function CaseStudyCard({ study }: { study: CaseStudy }) {
         className="block w-full cursor-pointer px-2 py-8 text-left sm:px-4 sm:py-12"
       >
         <div className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-3">
-          <h3 className="font-serif text-3xl font-medium leading-tight text-accent sm:text-4xl md:text-5xl">
+          <h3 className="font-serif text-3xl font-medium leading-tight text-navy sm:text-4xl md:text-5xl">
             {study.title}
           </h3>
           <span
             aria-hidden
-            className={`text-sm text-ink-muted transition-transform duration-300 ${
+            className={`text-sm text-navy transition-transform duration-300 ${
               expanded ? "rotate-180" : ""
             }`}
           >
