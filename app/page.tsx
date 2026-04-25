@@ -6,6 +6,7 @@ import { Stack } from "./components/Stack";
 import { Testimonial } from "./components/Testimonial";
 import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
+import { FadeInOnScroll } from "./components/FadeInOnScroll";
 
 export default function Home() {
   return (
@@ -13,11 +14,21 @@ export default function Home() {
       <Nav />
       <main id="top">
         <Hero />
-        <CaseStudies />
-        <About />
-        <Stack />
-        <Testimonial />
-        <Contact />
+        <FadeInOnScroll>
+          <CaseStudies />
+        </FadeInOnScroll>
+        <FadeInOnScroll>
+          <About />
+        </FadeInOnScroll>
+        <FadeInOnScroll>
+          <Stack />
+        </FadeInOnScroll>
+        <FadeInOnScroll>
+          <Testimonial />
+        </FadeInOnScroll>
+        <FadeInOnScroll>
+          <Contact />
+        </FadeInOnScroll>
       </main>
       <Footer />
     </>
