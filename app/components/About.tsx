@@ -1,10 +1,10 @@
 export function About() {
   return (
-    <section id="about" className="mx-auto max-w-3xl px-6 py-16 sm:py-24">
+    <section id="about" className="mx-auto max-w-5xl px-6 py-16 sm:py-24">
       <h2 className="font-serif text-3xl font-medium tracking-tight text-ink sm:text-4xl">
         About
       </h2>
-      <div className="mt-6 space-y-5 text-lg leading-relaxed text-ink">
+      <div className="mt-6 max-w-2xl space-y-5 text-lg leading-relaxed text-ink">
         <p>
           I&apos;ve spent 10+ years building the operations layer under GTM teams:
           LogCheck (B2B SaaS ops), CB Insights (RevOps director), Pachama
@@ -25,7 +25,7 @@ export function About() {
           hands dirty with projects.
         </p>
       </div>
-      <p className="mt-8 border-t border-hairline pt-6 text-sm text-ink-muted">
+      <p className="mt-8 max-w-2xl border-t border-hairline pt-6 text-sm text-ink-muted">
         <span className="font-medium text-ink">Education.</span>{" "}
         Columbia University: MS Sustainability Management. University of New
         Mexico: BA Media Arts.
