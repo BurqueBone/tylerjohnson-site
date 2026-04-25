@@ -23,7 +23,7 @@ export const STACK: StackRow[] = [
     label: "GTM",
     groups: [
       [
-        { label: "Apollo", logo: "apollo" },
+        { label: "Apollo" },
         { label: "Outreach", logo: "outreach" },
         { label: "Salesloft", logo: "salesloft" },
         { label: "Lemlist", logo: "lemlist" },
