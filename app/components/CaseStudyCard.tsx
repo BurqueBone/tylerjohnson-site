@@ -72,9 +72,7 @@ export function CaseStudyCard({ study }: { study: CaseStudy }) {
                 key={tool}
                 className="inline-flex items-center gap-1.5 rounded-full border border-hairline bg-shell-alt px-3 py-1 text-xs text-ink-muted"
               >
-                {logoSlug ? (
-                  <BrandIcon slug={logoSlug} className="h-3 w-3" />
-                ) : null}
+                <BrandIcon slug={logoSlug} label={tool} className="h-3 w-3" />
                 <span>{tool}</span>
               </li>
             );

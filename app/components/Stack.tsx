@@ -29,12 +29,11 @@ export function Stack() {
                       key={item.label}
                       className="inline-flex items-center gap-1.5 rounded-full bg-shell-alt px-3 py-1 text-sm"
                     >
-                      {item.logo ? (
-                        <BrandIcon
-                          slug={item.logo}
-                          className="h-3.5 w-3.5 text-ink-muted"
-                        />
-                      ) : null}
+                      <BrandIcon
+                        slug={item.logo}
+                        label={item.label}
+                        className="h-3.5 w-3.5 text-ink-muted"
+                      />
                       <span>{item.label}</span>
                     </span>
                   ))}
