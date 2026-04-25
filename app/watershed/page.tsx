@@ -16,18 +16,21 @@ export const metadata: Metadata = {
   robots: { index: false, follow: false },
 };
 
+type LogoRef = { slug?: string; src?: string };
 type Metric = {
   label: string;
-  logo?: string;
-  dualLogos?: [string, string];
+  logo?: LogoRef;
+  dualLogos?: [LogoRef, LogoRef];
 };
+
+const SFDC: LogoRef = { src: "/logos/salesforce.svg" };
 
 const METRICS: Metric[] = [
   { label: "10+ yrs GTM Ops" },
-  { label: "50+ SFDC flows shipped", logo: "salesforce" },
-  { label: "Built SFDC from scratch", logo: "salesforce" },
+  { label: "50+ SFDC flows shipped", logo: SFDC },
+  { label: "Built SFDC from scratch", logo: SFDC },
   { label: "Led team of 6" },
-  { label: "Agnostic across both", dualLogos: ["salesforce", "hubspot"] },
+  { label: "Agnostic across both", dualLogos: [SFDC, { slug: "hubspot" }] },
 ];
 
 const WHY_THIS_FITS = [
@@ -99,15 +102,17 @@ export default function WatershedPage() {
                 {metric.dualLogos ? (
                   <span className="flex items-center gap-0.5">
                     <BrandIcon
-                      slug={metric.dualLogos[0]}
-                      label={metric.dualLogos[0]}
+                      slug={metric.dualLogos[0].slug}
+                      logoSrc={metric.dualLogos[0].src}
+                      label={metric.label}
                       className="h-3.5 w-3.5"
                       brandColor
                       noFallback
                     />
                     <BrandIcon
-                      slug={metric.dualLogos[1]}
-                      label={metric.dualLogos[1]}
+                      slug={metric.dualLogos[1].slug}
+                      logoSrc={metric.dualLogos[1].src}
+                      label={metric.label}
                       className="h-3.5 w-3.5"
                       brandColor
                       noFallback
@@ -115,7 +120,8 @@ export default function WatershedPage() {
                   </span>
                 ) : (
                   <BrandIcon
-                    slug={metric.logo}
+                    slug={metric.logo?.slug}
+                    logoSrc={metric.logo?.src}
                     label={metric.label}
                     className="h-3.5 w-3.5 text-ink-muted"
                     noFallback

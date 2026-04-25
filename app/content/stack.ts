@@ -6,7 +6,7 @@ export const STACK: StackRow[] = [
     label: "CRM",
     groups: [
       [
-        { label: "Salesforce Sales Cloud", logo: "salesforce" },
+        { label: "Salesforce Sales Cloud", logoSrc: "/logos/salesforce.svg" },
         { label: "Automation" },
         { label: "Reporting" },
         { label: "Architecture" },

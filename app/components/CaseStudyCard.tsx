@@ -4,14 +4,15 @@ import { useState } from "react";
 import type { CaseStudy } from "../content/case-studies";
 import { BrandIcon } from "./BrandIcon";
 
-// Map tool names to simple-icons slugs where available
-const TOOL_LOGOS: Record<string, string> = {
-  "HubSpot Forms": "hubspot",
-  "Salesforce Flows": "salesforce",
-  Salesforce: "salesforce",
-  Slack: "slack",
-  ZoomInfo: "zoominfo",
-  Coefficient: "coefficient",
+// Map tool names to either a simple-icons slug or a local logo file
+type LogoRef = { slug?: string; src?: string };
+const TOOL_LOGOS: Record<string, LogoRef> = {
+  "HubSpot Forms": { slug: "hubspot" },
+  "Salesforce Flows": { src: "/logos/salesforce.svg" },
+  Salesforce: { src: "/logos/salesforce.svg" },
+  Slack: { slug: "slack" },
+  ZoomInfo: { src: "/logos/zoominfo.png" },
+  Coefficient: { src: "/logos/coefficient.png" },
 };
 
 export function CaseStudyCard({ study }: { study: CaseStudy }) {
@@ -66,13 +67,18 @@ export function CaseStudyCard({ study }: { study: CaseStudy }) {
           aria-label="Tools used"
         >
           {study.tools.map((tool) => {
-            const logoSlug = TOOL_LOGOS[tool];
+            const logo = TOOL_LOGOS[tool];
             return (
               <li
                 key={tool}
                 className="inline-flex items-center gap-1.5 rounded-full border border-hairline bg-shell-alt px-3 py-1 text-xs text-ink-muted"
               >
-                <BrandIcon slug={logoSlug} label={tool} className="h-3 w-3" />
+                <BrandIcon
+                  slug={logo?.slug}
+                  logoSrc={logo?.src}
+                  label={tool}
+                  className="h-3 w-3"
+                />
                 <span>{tool}</span>
               </li>
             );
