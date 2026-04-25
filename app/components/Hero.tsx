@@ -1,10 +1,18 @@
 import { BrandIcon } from "./BrandIcon";
 
-const METRICS: { label: string; logo?: string }[] = [
+type Metric = {
+  label: string;
+  logo?: string;
+  // For the special Agnostic pill, render two brand icons:
+  dualLogos?: [string, string];
+};
+
+const METRICS: Metric[] = [
   { label: "10+ yrs GTM Ops" },
   { label: "50+ SFDC flows shipped", logo: "salesforce" },
   { label: "Built SFDC from scratch", logo: "salesforce" },
   { label: "Led team of 6" },
+  { label: "Agnostic across both", dualLogos: ["salesforce", "hubspot"] },
 ];
 
 export function Hero() {
@@ -37,30 +45,37 @@ export function Hero() {
           Get in Touch
         </a>
       </div>
-      <div className="mt-8 flex flex-wrap items-center gap-3">
-        <span className="inline-flex items-center gap-2 rounded-full border border-blue/30 bg-blue/5 px-4 py-2 text-sm font-medium text-blue">
-          <BrandIcon slug="salesforce" label="Salesforce" className="h-4 w-4" brandColor />
-          Salesforce
-        </span>
-        <span className="inline-flex items-center gap-2 rounded-full border border-blue/30 bg-blue/5 px-4 py-2 text-sm font-medium text-blue">
-          <BrandIcon slug="hubspot" label="HubSpot" className="h-4 w-4" brandColor />
-          HubSpot
-        </span>
-        <span className="text-sm text-ink-muted">
-          <span className="font-medium text-ink">Agnostic</span> - fluent across both
-        </span>
-      </div>
       <ul className="mt-8 flex flex-wrap gap-2 border-t border-hairline pt-6">
         {METRICS.map((metric) => (
           <li
             key={metric.label}
             className="inline-flex items-center gap-1.5 rounded-full border border-hairline bg-shell-alt px-3 py-1 text-sm text-ink-muted"
           >
-            <BrandIcon
-              slug={metric.logo}
-              label={metric.label}
-              className="h-3.5 w-3.5 text-ink-muted"
-            />
+            {metric.dualLogos ? (
+              <span className="flex items-center gap-0.5">
+                <BrandIcon
+                  slug={metric.dualLogos[0]}
+                  label={metric.dualLogos[0]}
+                  className="h-3.5 w-3.5"
+                  brandColor
+                  noFallback
+                />
+                <BrandIcon
+                  slug={metric.dualLogos[1]}
+                  label={metric.dualLogos[1]}
+                  className="h-3.5 w-3.5"
+                  brandColor
+                  noFallback
+                />
+              </span>
+            ) : (
+              <BrandIcon
+                slug={metric.logo}
+                label={metric.label}
+                className="h-3.5 w-3.5 text-ink-muted"
+                noFallback
+              />
+            )}
             <span>{metric.label}</span>
           </li>
         ))}
