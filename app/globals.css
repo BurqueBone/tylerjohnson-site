@@ -30,3 +30,19 @@ body {
     transition-duration: 0.01ms !important;
   }
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Give sticky nav room above anchor targets */
+main [id],
+main > section[id] {
+  scroll-margin-top: 80px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
