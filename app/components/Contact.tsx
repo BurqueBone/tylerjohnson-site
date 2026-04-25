@@ -7,7 +7,7 @@ const LINKS = [
 
 export function Contact() {
   return (
-    <section id="contact" className="mx-auto max-w-3xl px-6 py-20 text-center sm:py-28">
+    <section id="contact" className="mx-auto max-w-3xl px-6 py-14 text-center sm:py-20">
       <h2 className="font-serif text-3xl font-medium tracking-tight text-ink sm:text-4xl">
         Let&apos;s talk
       </h2>
@@ -15,7 +15,7 @@ export function Contact() {
         Best for GTM Ops leadership roles at mid-stage companies, especially
         climate-tech and sustainability.
       </p>
-      <div className="mt-10 flex flex-wrap justify-center gap-3">
+      <div className="mt-8 flex flex-wrap justify-center gap-3">
         {LINKS.map((link) => (
           <a
             key={link.label}

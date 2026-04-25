@@ -3,11 +3,11 @@ import { BrandIcon } from "./BrandIcon";
 
 export function Stack() {
   return (
-    <section id="stack" className="mx-auto max-w-5xl px-6 py-16 sm:py-24">
+    <section id="stack" className="mx-auto max-w-5xl px-6 py-12 sm:py-16">
       <h2 className="font-serif text-3xl font-medium tracking-tight text-ink sm:text-4xl">
         Stack
       </h2>
-      <dl className="mt-8 space-y-6">
+      <dl className="mt-6 space-y-6">
         {STACK.map((row) => (
           <div
             key={row.label}

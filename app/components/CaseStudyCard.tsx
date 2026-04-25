@@ -26,7 +26,7 @@ export function CaseStudyCard({ study }: { study: CaseStudy }) {
         type="button"
         aria-expanded={expanded}
         onClick={() => setExpanded((v) => !v)}
-        className="block w-full cursor-pointer px-2 py-12 text-left sm:px-4 sm:py-16"
+        className="block w-full cursor-pointer px-2 py-8 text-left sm:px-4 sm:py-12"
       >
         <div className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-3">
           <h3 className="font-serif text-3xl font-medium leading-tight text-accent sm:text-4xl md:text-5xl">
@@ -62,7 +62,7 @@ export function CaseStudyCard({ study }: { study: CaseStudy }) {
         </div>
 
         <ul
-          className="mt-8 flex flex-wrap gap-2"
+          className="mt-6 flex flex-wrap gap-2"
           aria-label="Tools used"
         >
           {study.tools.map((tool) => {
