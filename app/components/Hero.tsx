@@ -21,11 +21,12 @@ export function Hero() {
       </p>
       <div className="mt-10 flex flex-wrap gap-3">
         <a
-          href="/resume.pdf"
-          download="TylerJohnson-Resume.pdf"
+          href="https://www.linkedin.com/in/johnsondtyler/"
+          target="_blank"
+          rel="noopener noreferrer"
           className="rounded-full bg-ink px-6 py-3 text-sm font-medium text-shell hover:bg-accent"
         >
-          Download Resume
+          View LinkedIn
         </a>
         <a
           href="#contact"
