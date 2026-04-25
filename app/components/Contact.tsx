@@ -5,15 +5,17 @@ const LINKS = [
   { label: "Download Resume", href: "/resume.pdf", external: false, download: "TylerJohnson-Resume.pdf" },
 ];
 
-export function Contact() {
+const DEFAULT_POSITIONING =
+  "Best for GTM Ops leadership roles at mid-stage companies, especially climate-tech and sustainability.";
+
+export function Contact({ positioningLine }: { positioningLine?: string } = {}) {
   return (
     <section id="contact" className="mx-auto max-w-3xl px-6 py-14 text-center sm:py-20">
       <h2 className="font-serif text-3xl font-medium tracking-tight text-ink sm:text-4xl">
         Let&apos;s talk
       </h2>
       <p className="mx-auto mt-5 max-w-xl text-lg text-ink-muted">
-        Best for GTM Ops leadership roles at mid-stage companies, especially
-        climate-tech and sustainability.
+        {positioningLine ?? DEFAULT_POSITIONING}
       </p>
       <div className="mt-8 flex flex-wrap justify-center gap-3">
         {LINKS.map((link) => (
