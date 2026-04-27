@@ -19,7 +19,7 @@ export type Degree = {
 };
 
 export const SUMMARY =
-  "GTM Operations Leader with 10+ years architecting the systems that turn strategy into measurable pipeline. Salesforce-deep (50+ flows, built instances from scratch), AI-first in practice (Claude, Cursor, Clay daily), agnostic across Salesforce + HubSpot. Climate-tech native via Pachama. Currently RevOps Contractor for Chief.";
+  "GTM Operations Leader with 10+ years architecting the systems that turn strategy into measurable pipeline. Salesforce-deep (50+ flows, built instances from scratch), AI-first in practice (Claude, Cursor, Clay daily), agnostic across Salesforce + HubSpot. Climate-tech native via Pachama.";
 
 export const EXPERIENCE: Job[] = [
   {
