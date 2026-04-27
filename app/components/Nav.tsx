@@ -22,12 +22,11 @@ export function Nav() {
             Contact
           </a>
           <a
-            href="/resume.pdf"
-            download="TylerJohnson-Resume.pdf"
+            href="/resume"
             className="rounded-full border border-ink px-4 py-1.5 text-sm hover:border-accent hover:text-accent"
           >
             <span className="sm:hidden">Resume</span>
-            <span className="hidden sm:inline">Download Resume</span>
+            <span className="hidden sm:inline">View Resume</span>
           </a>
         </div>
       </div>

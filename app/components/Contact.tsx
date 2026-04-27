@@ -2,7 +2,7 @@ const LINKS = [
   { label: "Email", href: "mailto:johnson.d.tyler@gmail.com", external: false },
   { label: "LinkedIn", href: "https://www.linkedin.com/in/johnsondtyler/", external: true },
   { label: "GitHub", href: "https://github.com/BurqueBone", external: true },
-  { label: "Download Resume", href: "/resume.pdf", external: false, download: "TylerJohnson-Resume.pdf" },
+  { label: "View Resume", href: "/resume", external: false },
 ];
 
 const DEFAULT_POSITIONING =
