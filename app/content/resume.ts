@@ -61,7 +61,6 @@ export const EXPERIENCE: Job[] = [
     location: "New York, NY",
     dates: "2014 - 2017",
     bullets: [
-      "Hired as a 3-month consultant; offered full-time before the end of month one.",
       "Integral in growing the company from $12K to $90K+ MRR, 8 to 20 employees, and 80 to 460+ accounts.",
       "Built financial and performance analytic models supporting managerial decisions and board meetings.",
     ],
