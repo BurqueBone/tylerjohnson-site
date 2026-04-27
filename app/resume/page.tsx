@@ -49,7 +49,7 @@ export default function ResumePage() {
           </section>
 
           {/* Skills */}
-          <section className="mt-5 print:mt-4">
+          <section className="mt-5 print:mt-3">
             <h2 className="text-[10px] font-semibold uppercase tracking-[0.15em] text-navy">
               Skills
             </h2>
@@ -66,7 +66,7 @@ export default function ResumePage() {
           </section>
 
           {/* Experience */}
-          <section className="mt-5 print:mt-4">
+          <section className="mt-5 print:mt-3">
             <h2 className="text-[10px] font-semibold uppercase tracking-[0.15em] text-navy">
               Experience
             </h2>
@@ -96,7 +96,7 @@ export default function ResumePage() {
           </section>
 
           {/* Education */}
-          <section className="mt-5 print:mt-4">
+          <section className="mt-5 print:mt-3">
             <h2 className="text-[10px] font-semibold uppercase tracking-[0.15em] text-navy">
               Education
             </h2>
