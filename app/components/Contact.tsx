@@ -25,7 +25,6 @@ export function Contact({ positioningLine }: { positioningLine?: string } = {}) 
             {...(link.external
               ? { target: "_blank", rel: "noopener noreferrer" }
               : {})}
-            {...(link.download ? { download: link.download } : {})}
             className="rounded-full border border-ink px-5 py-2.5 text-sm font-medium text-ink hover:border-accent hover:text-accent"
           >
             {link.label}
