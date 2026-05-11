@@ -8,6 +8,18 @@ export type CaseStudy = {
 
 export const CASE_STUDIES: CaseStudy[] = [
   {
+    id: "two-sided-inventory",
+    title: "Two-Sided Inventory in Salesforce",
+    tagline: "Built the supply/demand backbone for a marketplace business inside the CRM",
+    body: [
+      "Pachama operated a broker model: a supply team sourced high-quality carbon credit projects, a demand team sold to enterprise buyers. When leadership shut down the consumer marketplace, the inventory tracking had to live somewhere. Accounting wanted nothing to do with it. The team had no inventory system. Reps were quoting prices off spreadsheets that were stale the moment a new deal closed.",
+      "The right home was Salesforce, because that's where both sides of the business already lived. The hard part wasn't tracking units - it was the weighted average cost math. Every supply purchase changed the cost basis of the inventory pool, and every demand sale needed an accurate, auditable WAC at the moment of fulfillment. Without that, accounting couldn't pass an audit.",
+      "Two opportunity record types feeding one inventory model: supply opportunities incremented a custom Inventory_Vintage record, demand opportunities decremented it. Flow-driven roll-ups recalculated weighted average cost on every supply-side close-won, propagating to all open demand opps. A fulfillment object closed the loop, locking in WAC at the moment of allocation so the books matched reality. Reps could self-serve quotes against real-time inventory with real-time pricing. Anticipatory cost logic handled the back-to-back case where a sale triggered a same-day supply purchase.",
+      "Reps stopped pinging the supply team for pricing. The supply team got real-time visibility into committed credits. Accounting passed audits cleanly. The two-sided business ran on one system of record - which is the same shape of problem Campspot solves between its management software and its marketplace.",
+    ],
+    tools: ["Salesforce", "Flow", "Custom Objects", "Apex (light)", "Coefficient"],
+  },
+  {
     id: "outreach-actions",
     title: "Outreach Actions",
     tagline: "30-day response avg → 40 hours · 80% acceptance rate",
