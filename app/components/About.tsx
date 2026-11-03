@@ -8,9 +8,9 @@ export function About() {
         <p>
           I&apos;ve spent 10+ years building the operations layer under GTM teams:
           LogCheck (B2B SaaS ops), CB Insights (RevOps director), Pachama
-          (climate-tech GTM strategy), and now RevOps Contractor for Chief. The
-          throughline: turn messy inputs into systems that leadership can
-          actually trust.
+          (climate-tech GTM strategy), and now Senior Revenue Operations
+          Engineer at Chief. The throughline: turn messy inputs into systems
+          that leadership can actually trust.
         </p>
         <p>
           I lead with Flow before Apex, pure-path cohorts before blended

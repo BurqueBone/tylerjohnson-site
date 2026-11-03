@@ -23,14 +23,16 @@ export const SUMMARY =
 
 export const EXPERIENCE: Job[] = [
   {
-    title: "RevOps Contractor",
+    title: "Senior Revenue Operations Engineer",
     company: "Chief",
-    location: "Remote, Denver CO",
-    dates: "2025 - Present",
+    location: "Remote, Denver CO (contractor, full-time since Jun 2026)",
+    dates: "Oct 2025 - Present",
     bullets: [
-      "Designed dual-funnel measurement system replacing single-event MQL with timestamped Qualification Signals (QS) across B2B/B2C buyer paths; architected supporting Salesforce custom objects and Screen Flows.",
-      "Built native Lead deduplication, routing, and Convert flows replacing Traction Complete; deployed Email Address Record object for cross-record dedup.",
-      "Shipped Lead Review Queue Screen Flow for human-in-the-loop review of AI-qualified Pending Leads.",
+      "Automate Role-based Salesforce access, remove excess permission sets, and audit all prod access.",
+      "Drive data quality at scale: backfill 494,455 rows, stamp 96,950 Person Account contact Ids, enrich 10,071 Leads via Clay at 0 credits, and scrub junk phones from ~30,000 Leads to unblock dedupe.",
+      "Build stage entry tracking for 7 of 9 funnel stages, recycle reasons, and a rebuilt loss taxonomy.",
+      "Cut vendor spend: swap Gong and ZoomInfo packages for Clay, delete 41 legacy fields, retire dead Apex.",
+      "Speed routing with cross-object domain matching and Red Carpet routing for 100% of Paid IG.",
     ],
   },
   {
@@ -51,7 +53,6 @@ export const EXPERIENCE: Job[] = [
     dates: "2017 - 2021",
     bullets: [
       "Designed dual-credit attribution model (Source Credit + Funnel Credit, 90-day window) revealing 75% of \"outbound\" SQOs were marketing-sourced; ended the Sales vs Marketing budget tug-of-war.",
-      "Built funnel metric analysis with cohort conversions, sales performance analysis (quota attainment), and financial analysis (deferred revenue, ARR).",
       "Coached and mentored junior staff; led a team of 6 after a VP departure to ensure seamless departmental continuity.",
     ],
   },
@@ -62,7 +63,6 @@ export const EXPERIENCE: Job[] = [
     dates: "2014 - 2017",
     bullets: [
       "Integral in growing the company from $12K to $90K+ MRR, 8 to 20 employees, and 80 to 460+ accounts.",
-      "Built financial and performance analytic models supporting managerial decisions and board meetings.",
     ],
   },
 ];
