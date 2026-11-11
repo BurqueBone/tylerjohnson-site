@@ -28,11 +28,10 @@ export const EXPERIENCE: Job[] = [
     location: "Remote, Denver CO (contractor, full-time since Jun 2026)",
     dates: "Oct 2025 - Present",
     bullets: [
-      "Automate Role-based Salesforce access, remove excess permission sets, and audit all prod access.",
-      "Drive data quality at scale: backfill 494,455 rows, stamp 96,950 Person Account contact Ids, enrich 10,071 Leads via Clay at 0 credits, and scrub junk phones from ~30,000 Leads to unblock dedupe.",
-      "Build stage entry tracking for 7 of 9 funnel stages, recycle reasons, and a rebuilt loss taxonomy.",
-      "Cut vendor spend: swap Gong and ZoomInfo packages for Clay, delete 41 legacy fields, retire dead Apex.",
-      "Speed routing with cross-object domain matching and Red Carpet routing for 100% of Paid IG.",
+      "Architect a signal-based qualification framework that replaces single-event MQLs with timestamped buying signals across B2B and B2C funnels.",
+      "Build full-funnel stage tracking, capturing when records enter each stage and why they recycle or close lost, giving leadership pipeline history it never had.",
+      "Lead data quality improvements across hundreds of thousands of records, making CRM data reliable for reps, routing, and reporting.",
+      "Design scalable lead routing and deduplication that matches leads to existing accounts and contacts, so leads reach the right owner faster.",
     ],
   },
   {
