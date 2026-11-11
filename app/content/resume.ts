@@ -28,10 +28,10 @@ export const EXPERIENCE: Job[] = [
     location: "Remote, Denver CO (contractor, full-time since Jun 2026)",
     dates: "Oct 2025 - Present",
     bullets: [
-      "Architect a signal-based qualification framework that replaces single-event MQLs with timestamped buying signals across B2B and B2C funnels.",
-      "Build full-funnel stage tracking, capturing when records enter each stage and why they recycle or close lost, giving leadership pipeline history it never had.",
-      "Lead data quality improvements across hundreds of thousands of records, making CRM data reliable for reps, routing, and reporting.",
-      "Design scalable lead routing and deduplication that matches leads to existing accounts and contacts, so leads reach the right owner faster.",
+      "Architected a signal-based qualification framework that replaced single-event MQLs with timestamped buying signals across B2B and B2C funnels.",
+      "Built full-funnel stage tracking, capturing when records enter each stage and why they recycle or close lost, giving leadership pipeline history it never had.",
+      "Led data quality improvements across hundreds of thousands of records, making CRM data reliable for reps, routing, and reporting.",
+      "Designed scalable lead routing and deduplication that matches leads to existing accounts and contacts, so leads reach the right owner faster.",
     ],
   },
   {
