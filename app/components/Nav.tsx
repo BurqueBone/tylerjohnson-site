@@ -1,4 +1,5 @@
-export function Nav() {
+// anchorBase lets pages without these sections (e.g. /resume) link back to the homepage ones.
+export function Nav({ anchorBase = "" }: { anchorBase?: string }) {
   return (
     <nav
       aria-label="Primary"
@@ -6,19 +7,19 @@ export function Nav() {
     >
       <div className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
         <a
-          href="#top"
+          href={`${anchorBase}#top`}
           className="font-serif text-lg font-medium tracking-tight text-ink"
         >
           Tyler Johnson
         </a>
         <div className="flex items-center gap-4 text-sm sm:gap-6">
-          <a href="#work" className="hidden hover:text-accent sm:inline">
+          <a href={`${anchorBase}#work`} className="hidden hover:text-accent sm:inline">
             Work
           </a>
-          <a href="#about" className="hidden hover:text-accent sm:inline">
+          <a href={`${anchorBase}#about`} className="hidden hover:text-accent sm:inline">
             About
           </a>
-          <a href="#contact" className="hidden hover:text-accent sm:inline">
+          <a href={`${anchorBase}#contact`} className="hidden hover:text-accent sm:inline">
             Contact
           </a>
           <a

@@ -14,7 +14,7 @@ export default function ResumePage() {
   return (
     <>
       <div className="print:hidden">
-        <Nav />
+        <Nav anchorBase="/" />
       </div>
       <main className="mx-auto max-w-4xl px-6 py-10 print:max-w-none print:px-0 print:py-0">
         <div className="mb-6 flex items-center justify-between gap-4 print:hidden">
